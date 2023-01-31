@@ -23,10 +23,13 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 /* Site nav */
+
 .nav-logo {
     color: var(--primary-text-color);
     font-family: 'Raleway', sans-serif, cursive;
@@ -93,6 +96,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    vertical-align: middle;
 }
 
 .section .filter-btn {
@@ -148,9 +157,16 @@ body {
 /* Studio Page */
 
 .hero {
+    text-align: center;
+    margin-bottom: 120px;
+    
     background: var(--primary-text-color);
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 48px;
+
     color: var(--hero-text-color);
     font-size: 56px;
     line-height: 1.07;
@@ -166,13 +182,32 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+
+    display: inline-block;
+    padding: 16px 32px;
+    margin-bottom: 188px;
+    border: 3px solid #4D5AE5;
+    border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
     color: var(--btn-text-color);
     background: var(--active-color);
 }
+
+.advantages {
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+
+.container-one {
+    margin-bottom: 120px;
+}
+
 .advantages-title {
+
+    margin-top: 0;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 20px;
@@ -180,12 +215,26 @@ body {
     letter-spacing: 0.02em;
 }
 .advantages-text {
+
+    margin-top: 0;
+
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+.container-two {
+    margin-bottom: 120px;
+}
+
+
+
 .examples-title {
+
+    margin-top: 0;
+    margin-bottom: 72px;
+
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -195,7 +244,15 @@ body {
     letter-spacing: 0.02em;
 }
 
+
+.container-three {
+  
+}
+
 .team {
+    margin-top: 0;
+    margin-bottom: 120px;
+
     color: var(--primary-text-color);
     background: var(--secondary-section-color);
 }
@@ -203,6 +260,10 @@ body {
     background-color: var(--bg-pages-color);
 }
 .team-title {
+
+    margin-top: 0;
+    margin-bottom: 72px;
+
     color: var(--primary-text-color);
     font-size: 36px;
     line-height: 1.1;
@@ -212,6 +273,10 @@ body {
 
 }
 .team-member {
+
+    margin-top: 0;
+    margin-bottom: 8px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 20px;
@@ -219,12 +284,15 @@ body {
     letter-spacing: 0.02em;
 }
 .team-job {
+
+    margin-top: 0;
+    margin-bottom: 8px;
+
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
 
 
 
