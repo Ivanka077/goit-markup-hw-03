@@ -34,9 +34,35 @@ body {
     border-bottom: 1px solid #E7E9FC;
 }
 
-.nav-logo {
 
-    
+.container-nav-adress {
+    display: flex;
+}
+
+.container-main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+}
+/* .site-nav .point {
+    margin-right: 40px;
+}
+
+.site-nav .point:last-child {
+    margin-right: 0;
+} */
+
+.site-nav .point:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-logo {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 76px;
 
     color: var(--primary-text-color);
     font-family: 'Raleway', sans-serif, cursive;
@@ -52,6 +78,10 @@ body {
 }
 
 .nav-link {
+    display: block; 
+    margin-top: 24px;
+    margin-bottom: 24px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -69,7 +99,25 @@ body {
 .adress {
     font-style: normal;
 }
+
+.site-adress {
+    display: flex;
+    /* margin-right: auto;
+    це як можна замінити мій margin */
+}
+
+.site-adress .point:not(:last-child) {
+    margin-right: 40px;
+    margin-left: 332px; 
+}
+
+
 .adress-link {
+    display: block; 
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.5;
@@ -103,6 +151,16 @@ body {
 }
 /* Buttons */
 
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
+.btns:not(:last-child) {
+   margin-right: 24px; 
+}
 
 .filter-btn {
     background: var(--btns-bg-color);
@@ -130,6 +188,27 @@ body {
 }
 
 /* Examples */
+
+.all-works {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.work-item {
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.work-item:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+.work-item:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
+
 .card-bottom {
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
@@ -140,6 +219,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 32px;
+    padding-left: 16px;
 
     font-size: 16px;
     line-height: 1.5;
@@ -151,6 +231,7 @@ body {
     margin-top: 0;
     margin-bottom: 8px;
     padding-top: 32px;
+    padding-left: 16px;
 
     color: var(--primary-text-color); 
     font-weight: 500;
@@ -171,16 +252,21 @@ body {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 120px;
 }
 
 .footer-text {
+    margin-top: 0;
+    max-width: 264px;
+
     color: var(--footer-text-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 .footer-logo {
+    display: block;
+    margin-bottom: 16px;
+
     color: var(--footer-text-color);
     font-family: 'Raleway', sans-serif, cursive;
     font-weight: 800;
@@ -255,6 +341,11 @@ body {
     margin-bottom: 120px;
 }
 
+.our-advantages {
+    display: flex;
+    justify-content: center;
+}
+
 .advantages-title {
 
     margin-top: 0;
@@ -268,6 +359,8 @@ body {
 .advantages-text {
 
     margin-top: 0;
+    margin-right: 24px;
+    max-width: 264px;
 
     color: var(--secondary-text-color);
     font-size: 16px;
@@ -295,6 +388,13 @@ body {
     letter-spacing: 0.02em;
 }
 
+.example-images {
+    display: flex;
+}
+
+.technology:not(:last-child) {
+    margin-right: 24px;
+}
 
 .team {
     margin-top: 0;
@@ -305,7 +405,9 @@ body {
     color: var(--primary-text-color);
     background: var(--secondary-section-color);
 }
-.team-card {
+.team-card:not(:last-child) {
+    margin-right: 24px;
+
     background-color: var(--bg-pages-color);
 }
 .team-title {
@@ -321,6 +423,11 @@ body {
     letter-spacing: 0.02em;
 
 }
+
+.cards {
+    display: flex;
+}
+
 .team-member {
 
     margin-top: 0;
@@ -331,6 +438,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 .team-job {
 
@@ -341,6 +449,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 
