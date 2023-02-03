@@ -37,7 +37,7 @@ img {
 
 /* Site nav */
 
-.border-container {
+.header {
     border-bottom: 1px solid #E7E9FC;
 }
 
@@ -96,6 +96,8 @@ img {
 }
 
 .adress {
+    margin-left: auto;
+
     font-style: normal;
 }
 
@@ -105,14 +107,13 @@ img {
 
 .site-adress .point:not(:last-child) {
     margin-right: 40px;
-    margin-left: 332px; 
 }
 
 
 .adress-link {
     display: block; 
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 
     color: var(--secondary-text-color);
@@ -145,12 +146,17 @@ img {
    clip-path: inset(50%);
    margin: -1px;
 }
+
+.one-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 /* Buttons */
 
 .main-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -166,14 +172,13 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
 
-    display: inline-block;
     padding: 12px 24px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     vertical-align: middle;
 }
 
-.section .filter-btn {
+.one-section .filter-btn {
     color: var(--bg-btn-color);
     cursor: pointer;
 }
@@ -181,6 +186,7 @@ img {
 .filter-btn:focus {
     color: var(--bg-pages-color);
     background-color: var(--active-color);
+    border-color: transparent;
 }
 
 /* Examples */
@@ -188,11 +194,10 @@ img {
 .all-works {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 120px;
 }
 
 .work-item {
-    width: calc(100% 48px/3);
+    width: calc((100% - 48px) /3);
     margin-right: 24px;
     margin-bottom: 48px;
 }
@@ -201,7 +206,7 @@ img {
     margin-right: 0px;
 }
 
-.work-item:nth-child(n + 7) {
+.work-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
 
@@ -210,13 +215,14 @@ img {
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
 
 .text {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 32px;
-    padding-left: 16px;
 
     font-size: 16px;
     line-height: 1.5;
@@ -224,11 +230,9 @@ img {
 }
 
 
-.section .title {
+.one-section .title {
     margin-top: 0;
     margin-bottom: 8px;
-    padding-top: 32px;
-    padding-left: 16px;
 
     color: var(--primary-text-color); 
     font-weight: 500;
@@ -253,6 +257,7 @@ img {
 
 .footer-text {
     margin-top: 0;
+    margin-bottom: 0;
     max-width: 264px;
 
     color: var(--footer-text-color);
@@ -261,7 +266,7 @@ img {
     letter-spacing: 0.02em;
 }
 .footer-logo {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 
     color: var(--footer-text-color);
@@ -279,6 +284,9 @@ img {
 
 /* Studio Page */
 
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
 
 .container {
     margin-left: auto;
@@ -290,12 +298,13 @@ img {
 .hero {
     text-align: center;
     padding-top: 188px;
+    padding-bottom: 188px;
     
     background: var(--primary-text-color);
 }
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 500px;
+    margin: 0 auto;
     margin-bottom: 48px;
 
     color: var(--hero-text-color);
@@ -314,10 +323,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
 
-    display: inline-block;
     padding: 16px 32px;
-    margin-bottom: 188px;
-    border: 3px solid #4D5AE5;
+    border: none;
     border-radius: 4px;
 }
 .hero-btn:hover,
@@ -328,17 +335,22 @@ img {
 
 .advantages {
     margin-top: 0;
-    margin-bottom: 0; 
-}
-
-.container-one {
+    margin-bottom: 0;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
+
 .our-advantages {
     display: flex;
-    justify-content: center;
+}
+
+.point-text:not(:last-child) {
+    margin-right: 24px;
+}
+
+.point-text {
+    width: calc((100% - 72) / 4);
 }
 
 .advantages-title {
@@ -356,7 +368,7 @@ img {
 
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: 24px;
+    /* margin-right: 24px; */
     width: 264px;
 
 
@@ -366,11 +378,10 @@ img {
     letter-spacing: 0.02em;
 }
 
-.container-two {
-    padding-bottom: 120px;
+
+.examples {
+padding-bottom: 120px;
 }
-
-
 
 .examples-title {
 
@@ -391,7 +402,7 @@ img {
 }
 
 .technology {
-    width: calc(100%-48px/3);
+    width: calc((100% - 48px) / 3);
 }
 
 .technology:not(:last-child) {
@@ -409,7 +420,7 @@ img {
 }
 
 .team-card {
-    width: calc(100% 72px/4);
+    width: calc((100% - 72px) / 4);
 
     background-color: var(--bg-pages-color);
 }
@@ -421,7 +432,7 @@ img {
 
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 
     color: var(--primary-text-color);
     font-size: 36px;
@@ -458,7 +469,7 @@ img {
 .team-job {
 
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 
     color: var(--secondary-text-color);
     font-size: 16px;
