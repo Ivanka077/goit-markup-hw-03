@@ -218,6 +218,7 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 .text {
@@ -350,7 +351,7 @@ img {
 }
 
 .point-text {
-    width: calc((100% - 72) / 4);
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages-title {
